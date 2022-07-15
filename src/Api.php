@@ -77,7 +77,7 @@ class Api
         try {
             $data = $this->graph()->createRequest("get", "/me")->setReturnType(User::class)->execute();
         } catch (ClientException $e) {
-            var_dump($e);
+            print_r($e);
             return false;
         }
 
