@@ -65,7 +65,7 @@ class Api
         ))->getBody()->getContents();
 
         $token = json_decode($request);
-        $this->graph->setAccessToken($token);
+        $this->graph->setAccessToken($token->access_token);
 
         return $token;
     }
@@ -75,7 +75,7 @@ class Api
         $this->get_token($code);
 
         try {
-            $data = $this->graph()->createRequest("get", "/me")->setReturnType(User::class)->execute();
+            $data = $this->graph->createRequest("get", "/me")->setReturnType(User::class)->execute();
         } catch (ClientException $e) {
             print_r($e);
             return false;
