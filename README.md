@@ -6,11 +6,11 @@ A lightweight PHP library for authenticating and retrieving user data from Micro
 
 ## Features
 
-- Easy Microsoft OAuth 2.0 authentication
-- Token retrieval and management
-- Fetch user profile information
-- Supports multiple tenants and scopes
-- Built with Guzzle HTTP client and Microsoft Graph SDK
+- Easy Microsoft OAuth 2.0 authentication.
+- Token retrieval and management.
+- Fetch user profile information.
+- Supports multiple tenants and scopes.
+- Built with Guzzle HTTP client and Microsoft Graph SDK.
 
 ## Prerequisites
 
